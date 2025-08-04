@@ -22,7 +22,7 @@ function Header() {
           /></Navbar.Brand>
           <Nav className="mx-auto justify-content-center fs-5 d-flex gap-4">
             <Nav.Link id="nav1" href="/" className='text-black'>Home</Nav.Link>
-            <Nav.Link id="nav1" href="/Courses" className='text-black'>Courses</Nav.Link>
+            <Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link>
             <Nav.Link id="nav1" href="/Courses" className='text-black'>Categories</Nav.Link>
                           
             <Nav.Link id="nav1" href="/Courses" className='text-black'>Placements</Nav.Link>
