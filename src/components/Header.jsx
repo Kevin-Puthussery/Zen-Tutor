@@ -26,11 +26,11 @@ function Header() {
             <Nav className="mx-auto justify-content-center fs-5 d-flex gap-4">
               <Nav.Link id="nav1" href="/" className='text-black'>Home</Nav.Link>
               <Link to={'/courses'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link></Link>
-              <Nav.Link id="nav1" href="/Courses" className='text-black'>Categories</Nav.Link>
+              <Link to={'/courses'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Category</Nav.Link></Link>
 
-              <Nav.Link id="nav1" href="/Courses" className='text-black'>Placements</Nav.Link>
+              <Link to={'/placements'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Placements</Nav.Link></Link>
 
-              <Nav.Link id="nav1" href="#contacts" className='text-black'>Contacts</Nav.Link>
+              <Link to={'/contacts'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Contacts</Nav.Link></Link>
             </Nav>
 
             <Nav className="ms-auto">
