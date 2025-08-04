@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 function Header() {
   return (
     <>
-      <Navbar bg="grey" data-bs-theme="dark">
+      <Navbar collapseOnSelect expand="lg" bg="grey" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="./"><img
             src="/logo.png"
@@ -20,21 +20,25 @@ function Header() {
             className="d-inline-block align-top"
             alt="React Bootstrap logo"
           /></Navbar.Brand>
-          <Nav className="mx-auto justify-content-center fs-5 d-flex gap-4">
-            <Nav.Link id="nav1" href="/" className='text-black'>Home</Nav.Link>
-            <Link  to={'/courses'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link></Link>
-            <Nav.Link id="nav1" href="/Courses" className='text-black'>Categories</Nav.Link>
-                          
-            <Nav.Link id="nav1" href="/Courses" className='text-black'>Placements</Nav.Link>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" className="custom-toggler"/>
+          <Navbar.Collapse id="responsive-navbar-nav">
 
-            <Nav.Link id="nav1" href="#contacts" className='text-black'>Contacts</Nav.Link>
-          </Nav>
+            <Nav className="mx-auto justify-content-center fs-5 d-flex gap-4">
+              <Nav.Link id="nav1" href="/" className='text-black'>Home</Nav.Link>
+              <Link to={'/courses'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link></Link>
+              <Nav.Link id="nav1" href="/Courses" className='text-black'>Categories</Nav.Link>
 
-          <Nav className="ms-auto">
-            <Button href="/login" variant="dark" className="fw-bold px-4 fs-5">
-              <FaUserSecret /> Login
-            </Button>
-          </Nav>
+              <Nav.Link id="nav1" href="/Courses" className='text-black'>Placements</Nav.Link>
+
+              <Nav.Link id="nav1" href="#contacts" className='text-black'>Contacts</Nav.Link>
+            </Nav>
+
+            <Nav className="ms-auto">
+              <Button href="/login" variant="dark" className="fw-bold px-4 fs-5">
+                <FaUserSecret /> Login
+              </Button>
+            </Nav>
+          </Navbar.Collapse>
 
         </Container>
       </Navbar>
