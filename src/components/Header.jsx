@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FaUserSecret } from "react-icons/fa";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -22,7 +22,7 @@ function Header() {
           /></Navbar.Brand>
           <Nav className="mx-auto justify-content-center fs-5 d-flex gap-4">
             <Nav.Link id="nav1" href="/" className='text-black'>Home</Nav.Link>
-            <Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link>
+            <Link  to={'/courses'} style={{ textDecoration: 'none' }}><Nav.Link id="nav1" href="/courses" className='text-black'>Courses</Nav.Link></Link>
             <Nav.Link id="nav1" href="/Courses" className='text-black'>Categories</Nav.Link>
                           
             <Nav.Link id="nav1" href="/Courses" className='text-black'>Placements</Nav.Link>
