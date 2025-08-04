@@ -12,7 +12,7 @@ function Placements() {
 
     return(
 <>
- <div className="container my-5">
+ <div className="card container my-5">
       <div className="shadow-sm p-4 rounded-4 border bg-white">
         <div className="row text-center align-items-center justify-content-center">
           <div className="col-6 col-md-2">
@@ -53,7 +53,8 @@ function Placements() {
   <div class="row">
   
     
-    <div className="p-4">
+    <div class="col-md-5">
+      <div class="card shadow p-4 h-100">
         <h2 className="fw-bold">Placement Support</h2>
         <ul className="list-unstyled mt-4">
   <li className="d-flex align-items-center mb-3">
@@ -79,13 +80,13 @@ function Placements() {
 </ul>
 
 
-        <button className="btn btn-danger rounded-pill fw-bold px-4 py-2 mt-3" >
+        <button className="btn btn-danger rounded-pill fw-bold px-1 py-2 mt-3" >
           Talk to a Counsellor
         </button>
       </div>
     </div>
 
-   
+   </div>
 
 
     
